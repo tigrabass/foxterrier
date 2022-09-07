@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wire Fox Terrier</title>
+    <style>
+      .body {
+        background-color: #fff;
+        border: solid 1px #6c5b7c;
+        border-radius: 10px;
+        margin: 30px auto;
+        padding: 30px;
+        max-width: 60%;
+      }
+
+      h1,
+      h2,
+      p {
+        color: #6c5b7c;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 10px auto 0px auto;
+      }
+      h1 {
+        font-size: 58px;
+        margin: 30px auto;
+        max-width: 80%;
+      }
+      img {
+        display: block;
+        margin: 30px auto;
+        border-radius: 10px;
+        width: 80%;
+      }
+      hr {
+        color: #edb6c6;
+        max-width: 70%;
+        margin: 0px auto 30px auto;
+      }
+      p {
+        max-width: 70%;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      a {
+        text-decoration: none;
+      }
+      button {
+        display: block;
+        margin: 60px auto 30px auto;
+        font-size: 24px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: #6c5b7c;
+        color: #fff;
+        box-shadow: 0px 3px 10px #6c5b7c;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #edb6c663;
+        color: #6c5b7c;
+      }
+
+      span {
+        color: #fff;
+      }
+      .Wikilink {
+        display: block;
+        margin: 50 auto;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+      }
+      .Wikilink:hover {
+        text-decoration: underline;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding: 0px;
+        margin: 0 auto;
+      }
+
+      li {
+        display: inline-block;
+        padding: 0px 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6c5b7c;
+        font-size: 14px;
+      }
+
+      .byLink {
+        color: #6c5b7c;
+        font-weight: bold;
+      }
+      .byLink:hover {
+        text-decoration: underline;
+      }
+
+      .for-imgs {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .imgs {
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <h2>
+        <em>My favorite breed is...</em>
+      </h2>
+      <h1>the Wire Fox Terrier</h1>
+      <a
+        class="Ella"
+        href="https://www.facebook.com/zoltan.sabo.7"
+        target="_blank"
+      >
+        <img
+          src="/images/277000288_10159103258299032_7298464058380132238_n.jpg"
+          target="_blank"
+          title="the Wire fox terrier Ella pictured by Zoltan Sabo"
+        />
+        <hr />
+      </a>
+      <p>
+        Two of the wire fox terrier's most distinctive traits are its energy and
+        intelligence. It has a low threshold for boredom and requires
+        stimulation, exercise and attention. The wire fox terrier is a companion
+        animal that requires near-constant attention. The dog should be alert,
+        quick and ready to respond swiftly with enthusiasm. However, they should
+        also be friendly, communicative, and playful if they receive the proper
+        care and exercise. Bred to be independent thinkers, they are capable of
+        tactical maneuvering for vermin and other sport.
+      </p>
+      <br />
+      <span>
+        <a
+          class="Wikilink"
+          href="https://en.wikipedia.org/wiki/Wire_Fox_Terrier"
+          target="_blank"
+        >
+          <strong> Learn more from Wiki </strong>
+        </a>
+      </span>
+      <br />
+      <hr />
+      <div class="for-imgs">
+        <img
+          src="/images/photo_2022-09-07_18-06-08.jpg"
+          alt="sleeping foxterrier"
+          class="imgs"
+        />
+
+        <img
+          src="/images/photo_2022-09-07_18-06-03.jpg"
+          alt="hooded foxterrier"
+          class="imgs"
+        />
+      </div>
+      <button>Join the Wire fox terrier's lovers club 😊</button>
+      <br />
+
+      <ul>
+        <li>
+          Coded by
+          <a
+            class="byLink"
+            href="https://www.facebook.com/alexandra.lucenko"
+            target="_blank"
+          >
+            Alex Lucenko
+          </a>
+        </li>
+        <li>
+          Open source
+          <a
+            class="byLink"
+            href="https://www.github.com/tigrabass/"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      function joinTheWFTClub() {
+        let userName = prompt("What is your name?");
+        let userEmail = prompt("What is your email?");
+
+        if (userName.length > 0 && userEmail.length > 0) {
+          alert(
+            "Thanks, " +
+              userName +
+              "! We'll send you a letter of confirmation on your email: " +
+              userEmail +
+              "! Welcome to the club 🥰"
+          );
+        } else {
+          alert("Sorry, we can't invite any anonymous :(");
+        }
+      }
+      let buttonJoin = document.querySelector("button");
+      buttonJoin.addEventListener("click", joinTheWFTClub);
+    </script>
+  </body>
+</html>
